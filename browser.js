@@ -10,7 +10,7 @@ async function startBrowser(isHeadless){
         console.log("Opening browser");
         browser = await puppeteer.launch({
             headless: headlessMode,
-            args: ["--disable-setuid-sandbox"],
+            args: ["--no-sandbox", "--disable-setuid-sandbox"],
             'ignoreHTTPSErrors': true
         });
     } catch (err) {

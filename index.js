@@ -7,7 +7,7 @@ var argv = require('yargs/yargs')(process.argv.slice(2))
     .argv
 ;
 
-schedule.scheduleJob('*/10 * * * * *', function(){
+schedule.scheduleJob('*/60 * * * * *', function(){
     let browserInstance = browserObject.startBrowser(argv.headless);
     scraperController(browserInstance, argv.notification)
 });
