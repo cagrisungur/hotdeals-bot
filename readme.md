@@ -18,6 +18,7 @@ This project made for scraping one of the most popular forum site hot deals and 
 ```sh
 git clone https://github.com/cagrisungur/hotdeals-discord-bot
 cd /hotdeals-discord-bot
+npm install
 ```
 Do not forget to set your own `.env` file. If you need the discord notification go to your discord app get your own webhook tokens.
 
