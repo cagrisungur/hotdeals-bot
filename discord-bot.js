@@ -10,9 +10,9 @@ const sendMessage = {
             .setURL(url)
             .setColor('#0099ff');
 
-        webhookClient.send('Yeni Sıcak Ufukta Belirdi \n', {
-            username: 'Cagri The Sıcak Hunter',
-            avatarURL: 'https://i.imgur.com/wpZFViD.png',
+        webhookClient.send(process.env.BOT_MESSAGE, {
+            username: process.env.BOT_NAME,
+            avatarURL: process.env.BOT_AVATAR,
             embeds: [embed],
             files: [
                 "./images/sicak.png"
