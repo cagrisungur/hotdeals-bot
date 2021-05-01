@@ -1,11 +1,13 @@
 const browserObject = require('./browser');
 const scraperController = require('./pageController');
-var schedule = require('node-schedule');
+const schedule = require('node-schedule');
 
-console.log('gg')
+var argv = require('yargs/yargs')(process.argv.slice(2))
+    .boolean(['headless', 'notification'])
+    .argv
+;
 
-
-schedule.scheduleJob('*/5 * * * * *', function(){  // this for one hour
-    let browserInstance = browserObject.startBrowser();
-    scraperController(browserInstance)
+schedule.scheduleJob('*/10 * * * * *', function(){
+    let browserInstance = browserObject.startBrowser(argv.headless);
+    scraperController(browserInstance, argv.notification)
 });

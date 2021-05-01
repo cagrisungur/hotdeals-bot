@@ -10,18 +10,19 @@
     "fs": "^0.0.1-security",
     "http-server": "^0.12.3",
     "knex": "^0.95.4",
+    "minimist": "^1.2.5",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "node-schedule": "^2.0.0",
     "puppeteer": "^9.0.0",
     "selenium-webdriver": "^4.0.0-beta.3",
-    "sequelize": "^6.6.2"
+    "yargs": "^16.2.0"
   },
   "devDependencies": {
     "chromedriver": "^90.0.0"
   },
   "scripts": {
-    "start": "index.js",
+    "start": "node index.js",
     "dev": "node index.js",
     "knex": "knex"
   },

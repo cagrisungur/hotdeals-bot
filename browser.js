@@ -1,16 +1,20 @@
 const puppeteer = require('puppeteer');
 
-async function startBrowser(){
+async function startBrowser(isHeadless){
     let browser;
+    let headlessMode;
+
+    headlessMode = !!isHeadless;
+
     try {
-        console.log("Opening the browser......");
+        console.log("Opening browser");
         browser = await puppeteer.launch({
-            headless: false,
+            headless: headlessMode,
             args: ["--disable-setuid-sandbox"],
             'ignoreHTTPSErrors': true
         });
     } catch (err) {
-        console.log("Could not create a browser instance => : ", err);
+        console.log("Error => : ", err);
     }
     return browser;
 }
