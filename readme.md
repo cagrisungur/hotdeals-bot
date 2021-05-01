@@ -35,7 +35,7 @@ This will run chromium with headless mode.
 ```sh
 npm run start -- --headless
 ```
-##### Notificiation Enable (discord)
+##### Notification Enable (discord)
 ```sh
 npm run start -- --notification
 ```
