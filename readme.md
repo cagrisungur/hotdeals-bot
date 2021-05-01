@@ -27,7 +27,7 @@ Then;
 knex migrate:latest
 ```
 
-There are two commands avaible for cli.
+There are two commands available for cli.
 
 ##### Headless mode
 This will run chromium with headless mode.
