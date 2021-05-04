@@ -1,5 +1,7 @@
+
 const knex = require('./db/db')
 const discordMessageSender = require('./discord-bot');
+const telegram = require("./telegram");
 
 const scraperObject = {
     url: 'https://forum.donanimhaber.com/forumid_193/tt.htm',
@@ -39,7 +41,8 @@ const scraperObject = {
                     if (rows.length === 0) {
                         if (typeof argv !== "undefined") {
                             if (argv) {
-                                discordMessageSender.messageSender(item.title,item.url)
+                                discordMessageSender.messageSender(item.title,item.url);
+                                telegram.sendTelegramMessage(item.url, item.title);
                             }
                         }
                         return knex('subject').insert({'title': item.title, url: item.url})
