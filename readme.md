@@ -8,6 +8,7 @@ This project made for scraping one of the most popular forum site hot deals and 
 - [Node Schedule](https://www.npmjs.com/package/node-schedule) - Node Schedule is a flexible cron-like and not-cron-like job scheduler for Node.js. It allows you to schedule jobs (arbitrary functions) for execution at specific dates, with optional recurrence rules. It only uses a single timer at any given time (rather than reevaluating upcoming jobs every second/minute).
 - [Selenium](https://www.selenium.dev/) -Primarily it is for automating web applications for testing purposes, but is certainly not limited to just that.
 - [Discord.js](https://discord.js.org/#/) -discord.js is a powerful node.js module that allows you to interact with the Discord API very easily. It takes a much more object-oriented approach than most other JS Discord libraries, making your bot's code significantly tidier and easier to comprehend.
+- [Telegram Send Message](https://www.npmjs.com/package/telegram-send-message) - A library for sending messages via telegram.
 
 
 ## Updates
