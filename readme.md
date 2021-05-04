@@ -11,6 +11,7 @@ This project made for scraping one of the most popular forum site hot deals and 
 
 ## Future Updates
 
+- Telegram Message
 - Amazon daily deals
 
 ## Usage
