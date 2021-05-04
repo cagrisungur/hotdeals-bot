@@ -9,9 +9,13 @@ This project made for scraping one of the most popular forum site hot deals and 
 - [Selenium](https://www.selenium.dev/) -Primarily it is for automating web applications for testing purposes, but is certainly not limited to just that.
 - [Discord.js](https://discord.js.org/#/) -discord.js is a powerful node.js module that allows you to interact with the Discord API very easily. It takes a much more object-oriented approach than most other JS Discord libraries, making your bot's code significantly tidier and easier to comprehend.
 
+
+## Updates
+- [x] Telegram
+
 ## Future Updates
 
-- Amazon daily deals
+- [ ] Amazon daily deals (Soon)
 
 ## Usage
 
@@ -44,6 +48,10 @@ And both
 npm run start -- --headless --notification
 ```
 Note: I'm hardly suggest, start bot at first without notification, so there will be tons of subject at forum, if you don't want to spam notifications instantly.
+
+##### Telegram Notification
+Add your bot token and chat_id to ```.env``` file so bot will send the deals depends on your chat id.
+You can get your telegram token and chat id via @BotFather
 
 ## Development
 Feel free to pull requests.
